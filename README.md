@@ -1,7 +1,7 @@
 
 # SteerClear
 
-**SteerClear** is a self-built, remote-controlled autonomous vehicle designed for smooth and intelligent navigation. Using cutting-edge technologies like neural networks for decision-making, **SteerClear** integrates real-time sensor data and image processing to effortlessly avoid obstacles and choose optimal paths.
+**SteerClear** is a self-built, remote-controlled autonomous vehicle designed for smooth and intelligent navigation. Using cutting-edge technologies like neural networks for decision-making, and it integrates real-time sensor data and image processing to effortlessly avoid obstacles and choose optimal paths.
 
 ## Key Components
 - **Motor Control & Sensor Processing**: Powered by advanced sensors, the system processes data to detect nearby obstacles and adjust the vehicle’s movement accordingly.
