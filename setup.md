@@ -14,13 +14,18 @@
 
 3. **Navigate to the Project Directory**
    ```bash
-   cd SteerClear/mycar
+   cd Desktop/SteerClear/mycar
    ```
 
 4. **Start the Drive Command**
    ```bash
    python3 manage.py drive
    ```
+
+a command to debug pins
+```bash
+donkey calibrate --pwm-pin=PCA9685.1:40.14 (or type 1:40.15)
+```
 
 5. **Expose the Raspberry Pi using Ngrok**
 
@@ -29,22 +34,22 @@
      ngrok tcp 22
      ```
    - Note the generated IP address; this will be used to connect remotely.
-   - Ensure you've added your Ngrok authtoken:
+   - Ensure you've added your Ngrok authtoken (code in Slack #cmd-dump)
      ```bash
      ngrok config add-authtoken <your_authtoken>
      ```
 
 6. **Connect via SSH**  
-   - Use the IP from the previous step to SSH into the Raspberry Pi:
+   - Use the IP from the previous step to SSH into the Raspberry Pi (url given from ngrok):
      ```bash
-     ssh pi@2.tcp.ngrok.io -p <ngrok_port>
+     ssh raspberrypi@2.tcp.ngrok.io -p <ngrok_port>
      ```
 
 7. **Open a Local Tunnel**
 
    - On the Raspberry Pi terminal, run:
      ```bash
-     lt --port 887
+     lt --port 8887
      ```
    - This command will expose a network address. Use this address with `http` on your computer.
 
